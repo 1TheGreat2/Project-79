@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan's Pizzeria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Ryan's Pizzeria</h1>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#suggestions">Suggestions</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="welcome">
+        <h2>Welcome to Ryan's Pizzeria</h2>
+        <p>Your one-stop destination for delicious pizzas, both veg and non-veg.</p>
+        <button id="menuBtn">View Menu</button>
+    </section>
+    
+    <div id="menuModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Menu</h2>
+            <div id="vegMenu">
+                <h3>Veg Options</h3>
+                <ul id="vegList">
+                    <!-- Veg pizza options will be added here dynamically -->
+                </ul>
+            </div>
+            <div id="nonVegMenu">
+                <h3>Non-Veg Options</h3>
+                <ul id="nonVegList">
+                    <!-- Non-veg pizza options will be added here dynamically -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section id="suggestions">
+        <h2>Suggestions</h2>
+        <textarea id="suggestionBox" placeholder="Your suggestions here..."></textarea>
+        <button id="submitSuggestion">Submit</button>
+    </section>
+    
+    <footer>
+        <div class="social-media">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2024 Ryan's Pizzeria. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
